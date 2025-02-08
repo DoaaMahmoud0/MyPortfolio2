@@ -5,32 +5,63 @@ import "./Main.css";
 
 const Main = () => {
   const myprojects = [
-    { projectTitle: "Landing Page", category: "react", imgPath: "2.png" },
-    { projectTitle: "Landing Page", category: "react", imgPath: "3.png" },
-    { projectTitle: "Landing Page", category: "css", imgPath: "4.png" },
-    { projectTitle: "Landing Page", category: "css", imgPath: "PSD.png" },
+    {
+      projectTitle: "Portfolio",
+      category: "react",
+      imgPath: "2.png",
+      link: "https://myportfolio-livid-rho.vercel.app/",
+      github: "https://github.com/DoaaMahmoud0/MyPortfolio2",
+    },
+    {
+      projectTitle: "Portfolio",
+      category: "react",
+      imgPath: "3.png",
+      link: "my-portfolio2-navy.vercel.app",
+      github: "https://github.com/DoaaMahmoud0/MyPortfolio2",
+    },
+    {
+      projectTitle: "Restaurant Website",
+      category: "css",
+      imgPath: "4.png",
+      link: "https://doaamahmoud0.github.io/little-lemon/",
+      github: "https://github.com/DoaaMahmoud0/little-lemon",
+    },
     {
       projectTitle: "Landing Page",
+      category: "css",
+      imgPath: "PSD.png",
+      link: "https://doaamahmoud0.github.io/LandingPage/",
+      github: "https://github.com/DoaaMahmoud0/LandingPage",
+    },
+    {
+      projectTitle: "Courses Website ",
+      category: "css",
+      imgPath: "./imgs/9.png",
+      link: "https://doaamahmoud0.github.io/Nouvil/",
+      github: "https://github.com/DoaaMahmoud0/Nouvil",
+    },
+    {
+      projectTitle: "Coffe Website",
       category: "react",
       imgPath: "./imgs/1.jpg",
     },
     {
-      projectTitle: "Landing Page",
+      projectTitle: "Shoes Website",
       category: "react",
       imgPath: "./imgs/3.jpg",
     },
     {
-      projectTitle: "Landing Page",
+      projectTitle: "Cars Website",
       category: "react",
       imgPath: "./imgs/5.jpg",
     },
     {
-      projectTitle: "Landing Page",
+      projectTitle: "Portfolio",
       category: "react",
       imgPath: "./imgs/6.jpg",
     },
     {
-      projectTitle: "Landing Page",
+      projectTitle: "Furniture Website",
       category: "react",
       imgPath: "./imgs/7.jpg",
     },
@@ -40,15 +71,11 @@ const Main = () => {
       imgPath: "./imgs/8.jpg",
     },
     {
-      projectTitle: "Landing Page",
+      projectTitle: "Watches Website",
       category: "react",
       imgPath: "./imgs/b.png",
     },
-    {
-      projectTitle: "Landing Page",
-      category: "react",
-      imgPath: "./imgs/q.png",
-    },
+    
   ];
   const [currentActive, setcurrentActive] = useState("all");
   const [arr, setArr] = useState(myprojects);
@@ -63,7 +90,7 @@ const Main = () => {
   };
 
   return (
-    <main className="flex">
+    <main className="flex" id="Projects">
       <section className="left-section flex">
         <button
           onClick={() => {
@@ -99,7 +126,7 @@ const Main = () => {
                 layout
                 initial={{ transform: "scale:0" }}
                 animate={{ transform: "scale:1" }}
-                transition={{type: "spring" , damping:8, stiffness:50}}
+                transition={{ type: "spring", damping: 8, stiffness: 50 }}
                 key={items.imgPath}
                 className="card">
                 <img width={210} src={items.imgPath} />
@@ -116,8 +143,20 @@ const Main = () => {
 
                   <div className="icons flex">
                     <div style={{ gap: "11px" }} className="flex">
-                      <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                      <a
+                        href={items.link}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        {" "}
+                        <div className="icon-link"></div>
+                      </a>
+                      <a
+                        href={items.github}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        {" "}
+                        <div className="icon-github"></div>
+                      </a>
                     </div>
                     <a className="link flex" href="">
                       More

@@ -4,17 +4,15 @@ const Footer = () => {
     <footer className="flex">
       <ul className="flex">
         <li>
-          <a href="">About</a>
+          <a href="#About">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#Projects">Projects</a>
         </li>
         <li>
-          <a href="">Speaking</a>
+          <a href="#Contact">Contact</a>
         </li>
-        <li>
-          <a href="">Uses</a>
-        </li>
+       
       </ul>
 
       <p>© 2025 All rights reserved</p>

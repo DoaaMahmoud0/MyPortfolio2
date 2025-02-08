@@ -9,7 +9,7 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xqaebklj");
 
   return (
-    <section className="contactUs">
+    <section className="contactUs" id="Contact">
       <h1 className="title">
         <span className="icon-envelope"></span>
         Contact us

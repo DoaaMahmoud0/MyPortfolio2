@@ -21,8 +21,8 @@ const Hero = () => {
           in creating responsive, user-friendly websites and applications.
         </p>
         <div className="icons flex">
-          <div className="icon-linkedin icon"></div>
-          <div className="icon-github icon"></div>
+        <a href= "https://www.linkedin.com/in/doaa-mahmoud-426170224/" target="_blank"  rel="noopener noreferrer"><div className="icon-linkedin icon"></div></a>
+        <a href= "https://github.com/DoaaMahmoud0" target="_blank"  rel="noopener noreferrer"> <div className="icon-github icon"></div></a>
           <div className="icon-instagram icon"></div>
           <div className="icon-twitter icon"></div>
         </div>

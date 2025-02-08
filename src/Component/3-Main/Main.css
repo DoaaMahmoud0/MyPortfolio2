@@ -10,6 +10,7 @@ Table of content
 main.flex {
   gap: 2.64rem;
   align-items: start;
+  padding-top: 100px;
 }
 /*========================
 1- Left Section == Buttons

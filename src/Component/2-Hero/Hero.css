@@ -60,6 +60,10 @@ section.hero .icons{
     gap: 1.5rem;
     color: var(--subtitle);
 }
+section.hero .icons a{   
+     color: var(--subtitle);
+}
+
 
 section.hero .icons .icon:hover{
     font-size: 1.4rem;
